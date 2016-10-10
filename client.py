@@ -9,7 +9,7 @@ from thrift.protocol import TBinaryProtocol
 from hbase import Hbase
 from hbase.ttypes import *
 
-transport = TSocket.TSocket('140.205.176.165', 9090);
+transport = TSocket.TSocket('127.0.0.1', 9090);
 transport = TTransport.TBufferedTransport(transport)
 protocol = TBinaryProtocol.TBinaryProtocol(transport);
 
